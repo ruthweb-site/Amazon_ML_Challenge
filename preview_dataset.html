@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon ML Challenge 2026 - Data Preview</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        padding: 24px;
+        margin: 0;
+    }
+    h1 { color: #38bdf8; margin-bottom: 8px; }
+    p { color: #94a3b8; font-size: 15px; margin-top: 0; }
+    .card {
+        background-color: #1e293b;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 28px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    th, td {
+        border: 1px solid #334155;
+        padding: 10px 14px;
+        text-align: left;
+    }
+    th {
+        background-color: #0284c7;
+        color: #ffffff;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    tr:nth-child(even) { background-color: #1e293b; }
+    tr:nth-child(odd) { background-color: #0f172a; }
+    tr:hover { background-color: #334155; }
+    code { background: #334155; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+</style>
+</head>
+<body>
+    <h1>Amazon ML Challenge 2026: Dataset Explorer</h1>
+    <p>The original TSV files are 200MB - 500MB and contain over 2,000,000 rows, which freezes Excel or Notepad. Here is an interactive preview of the first 25 records.</p>
+    
+    <div class="card">
+        <h2>Source 1 Sample (Deduplicated Ground Reference)</h2>
+        <table border="1" class="dataframe preview-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>entity_id</th>
+      <th>business_name</th>
+      <th>business_address</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-925783039</td>
+      <td>Orelee's Barbershop</td>
+      <td>1795 Westchester Drive, High Point, NC</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-773889195</td>
+      <td>Prime Money</td>
+      <td>17560 Ellis Road, Tahlequah, OK</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-377745466</td>
+      <td>B+ Retail Inc</td>
+      <td>1712 Montebello Avenue, Phoenix, AZ</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-133037285</td>
+      <td>Christ Chapel</td>
+      <td>2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-755362802</td>
+      <td>Prabhav Business Center</td>
+      <td>797, Lake Town Block A, Kolkata, Howrah, West Bengal</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-851869949</td>
+      <td>Custom Wealth Services LLC</td>
+      <td>OH, Columbus, 5559 Orville Avenue</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-785847572</td>
+      <td>Consulting Nyasa Nursing Private Limited</td>
+      <td>2505, Tower 1, Oakwood, Runwal Greens, Mulund Goreagon Link Road, Near Fortis Hospital, Bhandup West, Mumbai, Maharashtra</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-27541239</td>
+      <td>Nexus Anchor Rain</td>
+      <td>1111 Church Street, Unit 2007, Nashville, TN</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-629417405</td>
+      <td>Moore Bitwise Inc</td>
+      <td>337 Oakland Avenue, Michigan City, IN</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-22305073</td>
+      <td>Dermatology Green Medicine</td>
+      <td>294 Meadowcreek Drive, Unit Unit 2, Village Of Pewaukee, WI</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-504790211</td>
+      <td>Crystal Lending PC</td>
+      <td>11643 Prosperity Road, South Jordan, UT</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-564729135</td>
+      <td>Dream Construction Limited</td>
+      <td>H.No.16-11-23/37/A, 2Nd Floor, Flat No.207, Sagar Hotel Building, Opp.Rta Office, Mo, Osarambagh, Hyderabad, Telangana</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-236312382</td>
+      <td>Kelly Advisory, Inc</td>
+      <td>301 1st Street, Chokio, MN</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-865131206</td>
+      <td>Helios</td>
+      <td>66 Edgewood Street, Bridgeport, CT</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-626914593</td>
+      <td>Unified Choice Dynamix</td>
+      <td>Unit BUILDING 3030, MD, 2701 Eastern Boulevard, Middle River</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-765734254</td>
+      <td>Health Fellowship Partners</td>
+      <td>601 Oleander Circle, Virginia Beach City, VA</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-82053739</td>
+      <td>Smart Healthcare Private Limited</td>
+      <td>303, 3Rd Floor Sakar 5 B/H Natraj Cinema Ashram Road, Ahmedabad, Gujarat</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-309349399</td>
+      <td>Callicoat &amp; Dailey Inc</td>
+      <td>Charlotte, NC, 833 Reliance Street</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-221443075</td>
+      <td>Iris Advisors</td>
+      <td>House No-777 Raghubir Bhawanmadan Pur Khadar Sarita Vihar, Delhi, South Delhi, Delhi</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-341506266</td>
+      <td>Secunderabad Park Private Limited</td>
+      <td>Secunderabad, Hyderabad, Plot No.53, Flat No.402, Sr Estate-I Rainbow Colony, Ammuguda, Sainikpuri, Telangana, # 53/1</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-990319941</td>
+      <td>Holy Synagogue</td>
+      <td>Sapulpa, OK, 2204 Park Street</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-597762257</td>
+      <td>Green Logistics Private Limited</td>
+      <td>E-7, Second Floor, New Delhi, South Delhi, Delhi</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-661315962</td>
+      <td>Scott Eagle Inc</td>
+      <td>4828 Hedges Avenue, Kansas City, MO</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>S1-716574008</td>
+      <td>Rajani Enterprises of Kannur</td>
+      <td>46/1106, Dhanalakshmi Road, Near Amani Auditorium, Kannur, Kerala</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>S1-985038901</td>
+      <td>Schaefer, Michael and Silver Associates</td>
+      <td>32876 Circle Drive, Millsboro, DE</td>
+      <td>US</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="card">
+        <h2>Ground Truth Matching Labels Sample</h2>
+        <table border="1" class="dataframe preview-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>source1_entity_id</th>
+      <th>matched_entity_ids</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-965667</td>
+      <td>S2-681193310,S2-743505751,S3-775321672,S3-11291185,S3-860443364</td>
+    </tr>
+    <tr>
+      <td>S1-55344266</td>
+      <td>S2-249013014,S2-197070651,S3-478195123,S3-384364074</td>
+    </tr>
+    <tr>
+      <td>S1-343815751</td>
+      <td>S2-790675320,S2-479876582,S3-878454467</td>
+    </tr>
+    <tr>
+      <td>S1-656753428</td>
+      <td>S2-153058913,S2-24659151,S3-679606215</td>
+    </tr>
+    <tr>
+      <td>S1-102811957</td>
+      <td>S2-478959098,S2-553508714,S2-625774905,S3-728090388,S3-928796641,S3-449308785</td>
+    </tr>
+    <tr>
+      <td>S1-18727616</td>
+      <td>S2-755677256,S3-187831601,S3-641489370,S3-476250621</td>
+    </tr>
+    <tr>
+      <td>S1-318373630</td>
+      <td>S2-660036492,S3-804600254</td>
+    </tr>
+    <tr>
+      <td>S1-86989137</td>
+      <td>S3-274817120,S3-312496301</td>
+    </tr>
+    <tr>
+      <td>S1-29845983</td>
+      <td>S2-648035184,S3-588502663</td>
+    </tr>
+    <tr>
+      <td>S1-789009573</td>
+      <td>S2-383871912,S3-74481402,S3-576451439</td>
+    </tr>
+    <tr>
+      <td>S1-730934468</td>
+      <td>S2-356983532,S3-352439310</td>
+    </tr>
+    <tr>
+      <td>S1-7293388</td>
+      <td>S2-7028416,S2-442723188,S2-157073701,S3-523120965</td>
+    </tr>
+    <tr>
+      <td>S1-546142636</td>
+      <td>S2-487600131,S2-582477216,S2-392804085,S3-200008747,S3-729771680,S3-249331830</td>
+    </tr>
+    <tr>
+      <td>S1-274126313</td>
+      <td>S2-736616474,S2-680265918,S2-51486805,S3-925631694,S3-461175723,S3-850112871</td>
+    </tr>
+    <tr>
+      <td>S1-145361722</td>
+      <td>S2-120366543,S2-939389287,S3-96572514</td>
+    </tr>
+    <tr>
+      <td>S1-503957000</td>
+      <td>S2-994658326,S2-235117490,S2-353308450,S2-173295926,S3-858763214,S3-33665521,S3-555791452</td>
+    </tr>
+    <tr>
+      <td>S1-692000596</td>
+      <td>S2-580419223,S3-164220452</td>
+    </tr>
+    <tr>
+      <td>S1-561341312</td>
+      <td>S2-483615364,S3-619529814</td>
+    </tr>
+    <tr>
+      <td>S1-777597828</td>
+      <td>S2-836452886,S3-413669121</td>
+    </tr>
+    <tr>
+      <td>S1-282467635</td>
+      <td>S2-938895481,S3-138350041</td>
+    </tr>
+    <tr>
+      <td>S1-727602285</td>
+      <td>S2-976870196,S2-947230367,S2-23141904,S2-138660620,S3-204655096</td>
+    </tr>
+    <tr>
+      <td>S1-302869473</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S1-65263544</td>
+      <td>S2-881122703,S2-998270769,S2-180463458,S3-403476502,S3-102573485,S3-350074034</td>
+    </tr>
+    <tr>
+      <td>S1-840162906</td>
+      <td>S2-129529678,S3-800978181,S3-139858754,S3-762681944,S3-799520471</td>
+    </tr>
+    <tr>
+      <td>S1-264156494</td>
+      <td>S2-184087846,S3-562014765,S3-544213330</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>

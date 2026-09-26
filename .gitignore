@@ -1,0 +1,33 @@
+# Large dataset files (too large for GitHub)
+6ab10eb3b23ba_student_resource/
+6ab10eb3b23ba_student_resource.zip
+code.zip
+
+# Temp Office files
+~$*
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+*.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Output files (optional - remove if you want to commit results)
+# output/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
